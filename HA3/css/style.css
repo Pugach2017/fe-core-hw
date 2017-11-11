@@ -1,0 +1,56 @@
+body {
+  background-image: url('../img/page-bg.png');
+  background-position:bottom;
+  background-size:cover;
+  height: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 80%;
+}
+
+.wrapper {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 500px;
+  width: 480px;
+  background-color: white;
+  height: auto;
+  padding: 50px;
+}
+
+h1 {
+  color: #008080;
+  font: 20pt;
+  font-style: normal;
+  margin-top: 0px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: inherit;
+}
+
+h4 {
+  color: #008080;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+h5 {
+  color: #008080;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.text {
+  padding-right: 100px;
+}
+
+.underlined {
+  border-bottom: 1px solid #3333;
+  margin-top: 30px;
+}
+
+.column {
+  column-width: 200px;
+  column-count: 2;
+  column-gap: 50px;
+  padding-left: 30px;
+  line-height: 30px;
+  color: #008080;
+  font-family: Verdana, Geneva, sans-serif;
+}
