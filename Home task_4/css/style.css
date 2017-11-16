@@ -1,0 +1,173 @@
+body {
+  background-image: url('../img/sea.jpg');
+  background-position:bottom;
+  background-size:cover;
+  height: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 80%;
+}
+
+.wrapper {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 500px;
+  width: 800px;
+  background-color: white;
+  height: auto;
+  padding: 50px;
+}
+
+.container {
+  width: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+.block {
+  display: inline-block;
+  text-align: left;
+  width: 550px;
+  margin-top: 0px;
+}
+
+.block2 {
+  display: inline-block;
+  text-align: left;
+  width: 220px;
+  margin: 10px;
+  margin-top: 0px;
+  vertical-align: top;
+}
+
+h1 {
+  color: #263555;
+  font: 18pt;
+  font-style: normal;
+  margin-top: 0px;
+  margin-bottom: 40px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+h4 {
+  color: #263555;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+h5 {
+  color: #263555;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.leftimg {
+  float: left;
+  margin: 5px;
+  border: 15px solid;
+  border-color: white;
+}
+
+a {
+  color: #263555;
+  font-size: 95%;
+  font-weight: bold;
+}
+
+.underlined {
+  margin-top: 50px;
+  border-bottom: 1px solid #3333;
+  margin-bottom: 50px;
+}
+
+.list {
+  counter-reset: li;
+  list-style: none;
+  font-family: Verdana, Geneva, sans-serif;
+  padding: 0;
+}
+
+.list a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  text-decoration: none;
+}
+
+.list a:hover:before {
+  transform: rotate;
+}
+
+.list a::after {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left:-2em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #00BFFF;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+}
+
+.bord {
+  list-style-type: none;
+  white-space:normal;
+}
+
+.column {
+  column-width: 50px;
+  column-count: 2;
+  column-gap: 50px;
+  line-height: 30px;
+  color: #263555;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: left;
+}
+
+.info-block {
+  position: relative;
+  background: whitesmoke;
+  margin: 10px 10px;
+  width: 150px;
+  height: 120px;
+  border: 1px solid gainsboro;
+  border-radius: 3px;
+  padding: 30px;
+  text-align: left;
+  vertical-align: top;
+  color: #263555;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 90%;
+  font-weight: bold;
+}
+
+.info-block ::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 75px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 70px 30px 0 30px;
+  border-color: whitesmoke transparent transparent transparent;
+}
+
+.arrow {
+  list-style-type: none;
+  text-align: left;
+}
+
+h3 {
+  margin-top: 50px;
+  vertical-align: middle;
+  text-align: center;
+  color: #263555;
+  font-family: Verdana, Geneva, sans-serif;
+}
