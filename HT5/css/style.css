@@ -1,0 +1,261 @@
+body {
+  background-image: url('../img/sea.jpg');
+  background-repeat: no-repeat;
+  font-family: 'Dorsa';
+  text-align: center;
+}
+
+.menu {
+  height: 140px;
+  width: 800px;
+  margin: 40px auto 0;
+  position: relative;
+
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 15px;
+  list-style-type: none;
+  letter-spacing: 3px;
+}
+
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul.menu > li > a:hover {
+    color: black;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 3px;
+    width: 50px;
+    height: 60px;
+    border-radius: 3px;
+}
+
+.submenu::before{
+    content: '';
+    position: relative;
+    left: 0px;
+    border: 5px solid transparent;
+    top:-10px;
+    left: 25px;
+}
+
+.submenu::before {
+    border-bottom: 5px solid white;
+    position: absolute;
+}
+
+ul.submenu > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.select {
+  width: 120px;
+  height: 120px;
+  font-family: 'Dorsa';
+  font-weight: normal;
+  font-size: 45px;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 50%;
+  background: white;
+}
+
+.wrapper {
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 300px;
+  width: 800px;
+  background-color: white;
+  height: 850px;
+  padding: 50px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.text p {
+    position: absolute;
+    top:440px;
+    font-size: 16px;
+    left:232px;
+    color: #263560;
+    background-color: white;
+    padding: 25px 30px;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.text span {
+  position: absolute;
+  top:510px;
+  font-size: 25px;
+  left:232px;
+  color: white;
+  background-color: DodgerBlue;
+  padding: 10px 30px;
+  font-weight: 30px;
+}
+
+.buttons-wrapper {
+    position: absolute;
+    top:660px;
+    left:260px;
+    display: flex;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.buttons-wrapper a {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: DodgerBlue;
+    line-height: 82px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.left-button {
+  color: white;
+}
+
+.left-button:hover {
+    background-color: yellow;
+    color: white;
+}
+
+.right-button {
+    color: white;
+}
+
+.right-button:hover {
+    background-color: green;
+    color: white;
+}
+
+
+.TOP {
+  font-family: 'Pathway Gothic One', sans-serif;
+  padding: 0px;
+  margin-top: 15px;
+  position: absolute;
+  font-size: 25px;
+  color: #263560;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  margin: 0px -17px ;
+}
+
+.country-block {
+  width: 240px;
+  height: 230px;
+  margin-bottom: 120px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-size: 20px;
+}
+
+.ita {
+  background-image: url('../img/5.jpg');
+}
+
+.ny {
+  background-image: url('../img/6.jpg');
+}
+
+.paris {
+  background-image: url('../img/7.jpg');
+}
+
+.cover {
+  width: 160px;
+  height: 230px;
+  background-color: #154360;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.cover button {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.country-block:hover .cover {
+  display: block;
+}
+
+.shape {
+  width: 120px;
+  height: 120px;
+  font-family: 'Dorsa', sans-serif;
+  font-size: 50px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 50%;
+  background: white;
+}
+
+.pcity {
+  color: #D7DBDD;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 12px;
+  line-height: 17px;
+  padding-top: 5px;
+  padding-left: 8px;
+  text-align: left;
+}
+
+#go_up {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 160px;
+  right: 180px;
+  cursor: pointer;
+}
