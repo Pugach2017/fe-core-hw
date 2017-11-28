@@ -2,7 +2,7 @@ body {
   background-image: url('../img/sea.jpg');
   background-repeat: no-repeat;
   font-family: 'Dorsa';
-  text-align: center;
+
 }
 
 .menu {
@@ -10,7 +10,6 @@ body {
   width: 800px;
   margin: 40px auto 0;
   position: relative;
-
 }
 
 ul {
@@ -96,42 +95,59 @@ ul.menu > li:hover > ul.submenu {
 }
 
 .wrapper {
+  position: relative;
   margin: auto;
   margin-top: 40px;
-  margin-bottom: 300px;
-  width: 800px;
+  margin-bottom: 30px;
+  width:780px;
   background-color: white;
   height: 850px;
   padding: 50px;
   font-family: 'Pathway Gothic One', sans-serif;
 }
 
-.text p {
-    position: absolute;
-    top:440px;
-    font-size: 16px;
-    left:232px;
-    color: #263560;
-    background-color: white;
-    padding: 25px 30px;
-    font-family: 'Pathway Gothic One', sans-serif;
+.boat{
+  background-image: url('../img/1.jpg');
+  background-size: cover;
+  height: 500px;
+  width: 780px;
+  position: relative;
 }
 
-.text span {
+.text1 {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  top: 210px;
+  background: white;;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.text1_1 {
+  color: #1F618D;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 12px;
+}
+
+.text2 {
   position: absolute;
-  top:510px;
-  font-size: 25px;
-  left:232px;
-  color: white;
+  height: 40px;
+  width: 240px;
+  top: 220px;
+}
+
+.text1_2 {
+  color: #FDFEFE;
+  font-size: 29px;
+  padding: 10px;
   background-color: DodgerBlue;
-  padding: 10px 30px;
-  font-weight: 30px;
 }
 
 .buttons-wrapper {
-    position: absolute;
-    top:660px;
-    left:260px;
+    position: relative;
+    top:350px;
+    left:30px;
     display: flex;
     text-align: center;
     width: 80px;
@@ -253,9 +269,9 @@ ul.menu > li:hover > ul.submenu {
 
 #go_up {
   position: fixed;
-  width: 50px;
+  width: 0px;
   height: 50px;
-  bottom: 160px;
-  right: 180px;
+  bottom: 120px;
+  right: 235px;
   cursor: pointer;
 }
