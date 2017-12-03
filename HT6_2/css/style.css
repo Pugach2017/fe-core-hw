@@ -1,0 +1,197 @@
+body {
+  background-image: url('../img/sea.jpg');
+  background-repeat: no-repeat;
+  font-family: 'Dorsa';
+  text-align: center;
+}
+
+header {
+  height: 140px;
+  width: 800px;
+  margin: 40px auto 0;
+  position: relative;
+}
+
+ul.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 15px;
+  list-style-type: none;
+  letter-spacing: 3px;
+
+}
+
+ul:after {
+    display: flex;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+
+ul.menu > li > a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul.menu > li > a:hover {
+    color: black;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 3px;
+    width: 50px;
+    height: 60px;
+    border-radius: 3px;
+    list-style-type: none;
+}
+
+.submenu::before{
+    content: '';
+    position: relative;
+    left: 0px;
+    border: 5px solid transparent;
+    top:-10px;
+    left: 25px;
+}
+
+.submenu::before {
+    border-bottom: 5px solid white;
+    position: absolute;
+}
+
+ul.submenu > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.select {
+  width: 120px;
+  height: 120px;
+  font-family: 'Dorsa';
+  font-weight: normal;
+  font-size: 45px;
+  letter-spacing: 3px;
+  text-align: center;
+  line-height: 120px;
+  border-radius: 50%;
+  background: white;
+}
+
+.main {
+  display: inline-flex;
+  margin: 100px ;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: white;
+  height:auto;
+  padding: 0px;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+}
+
+.footer-div {
+  background-color: #30455b;
+  padding:20px;
+  display: flex;
+  flex-direction: row;
+  line-height: 25px;
+}
+.contact{
+    list-style-type: none;
+    margin-left: 90px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    background: transparent;
+}
+
+h2{
+  margin-left: -800px;
+  color: #263555;
+}
+
+
+.social-media-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    list-style: none;
+}
+
+.social-media-list a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-size: 350px 100px;
+}
+
+.social-media-list li:last-of-type a {
+    border-right: none;
+}
+
+.social-media-list .twitter {
+    background-position: -50px -50px;
+}
+
+.social-media-list .facebook {
+    background-position: 0 -50px;
+}
+
+.social-media-list .g-plus {
+    background-position: -300px -50px;
+}
+
+.social-media-list .linkedin {
+    background-position: -200px -50px;
+}
+
+.down{
+  font-size: 12px;
+  font-family: Arial;
+  color: white;
+}
+
+#go_up {
+  position: fixed;
+  width: 0px;
+  height: 50px;
+  bottom: 120px;
+  right: 170px;
+  cursor: pointer;
+}
+
+.hovergallery img {
+  -webkit-transform:scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  opacity: 0.7;
+  margin: 0 0px 0px 0;
+}
+
+.hovergallery img:hover{
+  -webkit-transform:scale(1.1);
+  box-shadow:0px 0px 0px gray;
+  opacity: 1;
+  }
