@@ -23,16 +23,12 @@ ul.menu {
     font-family: 'Pathway Gothic One';
 }
 
-a {
-    text-decoration: none;
-}
-
-.ME a {
+.MEL a {
     font-size: 26px;
     color: white;
 }
 
-.ME a:hover {
+.MEL a:hover {
     color: black;
 }
 
@@ -55,21 +51,22 @@ h1 > a {
     color: #263555;
 }
 
-.ME {
-    position: relative;
+.MEL {
+      position: relative;
 }
 
 ul.submenu {
     display: none;
-    padding: 5px;
     position: absolute;
-    left: -7px;
-    top: 40px;
+    background-color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-top: 3px;
+    width: 50px;
+    height: 80px;
+    border-radius: 3px;
     list-style-type: none;
-    background-color: #fff;
-    text-align: center;
-    border-radius: 2%;
-    }
+}
 
 ul.submenu::before {
     content: '';
@@ -77,7 +74,7 @@ ul.submenu::before {
     width: 0;
     height: 0;
     top: -3px;
-    left: 95px;
+    left: 27px;
     border-style: solid;
     border-width: 0 2.5px 3px 2.5px;
     border-color: transparent transparent #fff transparent;
@@ -89,7 +86,7 @@ ul.submenu::before {
     color: #6b7488;
 }
 
-.ME:hover > .submenu {
+.MEL:hover > .submenu {
     display: block
 }
 
@@ -166,7 +163,7 @@ a{
     background-position: -200px -50px;
 }
 
-.down{
+.down {
   font-size: 12px;
   font-family: Arial;
   color: white;
@@ -181,7 +178,7 @@ a{
   cursor: pointer;
 }
 
-.hovergallery{
+.hovergallery {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -189,7 +186,6 @@ a{
   margin-bottom: 40px;
   margin-top: 20px;
   margin-left: 10px;
-
 }
 
 .hovergallery img {
@@ -197,10 +193,9 @@ a{
   -webkit-transition-duration: 0.5s;
   opacity: 0.7;
   margin: 0 -35px 0px 15px;
-
 }
 
-.hovergallery img:hover{
+.hovergallery img:hover {
   -webkit-transform:scale(1.1);
   box-shadow:0px 0px 0px gray;
   opacity: 1;
@@ -230,36 +225,56 @@ h2 {
         max-width: 600px;
         margin: 0 auto;
     }
+
     ul.menu li {
         width: 155px;
         padding: 10px 10px 10px 15px;
     }
+
     ul.menu .table {
         text-indent: 40px;
     }
+
     ul.menu .logo {
         width: 100%;
         padding: 10px;
         order: -1;
     }
+
     ul.menu .Toys {
         text-align: center;
     }
+
     h1 {
         margin: 0 auto;
     }
+
     ul.submenu {
         display: none;
         position: absolute;
         background-color: #f2f2f3;
-        text-align: center;
+        text-align: left;
         border-radius: 2%;
         height: 135px;
         line-height: 25px;
+        width: 70px;
         opacity: 1;
+        margin-left: 40px;
       }
 
-      #go_up {
+    ul.submenu::before {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          top: -3px;
+          left: 37px;
+          border-style: solid;
+          border-width: 0 2.5px 3px 2.5px;
+          border-color: transparent transparent #fff transparent;
+      }
+
+    #go_up {
         position: fixed;
         width: 0px;
         height: 50px;
@@ -267,7 +282,8 @@ h2 {
         right: 135px;
         cursor: pointer;
       }
-      .main {
+
+    .main {
         display: flex;
         flex-direction: column;
         margin: 60px;
@@ -280,7 +296,8 @@ h2 {
         padding-left: 27px;
         margin-left: auto;
       }
-      .footer-div {
+
+    .footer-div {
         background-color: #30455b;
         padding:1px;
         display: flex;
@@ -290,10 +307,10 @@ h2 {
         margin-left: -27px;
       }
 
-      .contact{
+      .contact {
           list-style-type: none;
           width: 90%;
-          margin-left: 30px;
+          margin-left: 25px;
           margin-right: 18px;
       }
 }
@@ -304,6 +321,7 @@ h2 {
         min-width: 480px;
         text-align: center;
     }
+
     .main {
       display: flex;
       flex-direction: column;
@@ -322,6 +340,7 @@ h2 {
     .img7, .img8 {
       display: none;
     }
+
     #go_up {
       position: fixed;
       width: 0px;
@@ -330,6 +349,7 @@ h2 {
       right: 200px;
       cursor: pointer;
     }
+
     .footer-div {
       background-color: #30455b;
       padding:1px;
@@ -340,7 +360,7 @@ h2 {
       margin-left: -27px;
     }
 
-    .contact{
+    .contact {
         list-style-type: none;
         width: 70%;
         margin-left: -29px;
